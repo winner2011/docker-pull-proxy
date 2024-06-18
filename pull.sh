@@ -5,12 +5,12 @@
 # "Architecture": "arm64",
 
 # 不指定 cpu 架构
-cat trigger.txt |awk '{print "docker pull " $1} '
-cat trigger.txt |awk '{print "docker pull " $1} '| sh
+# cat trigger.txt |awk '{print "docker pull " $1} '
+# cat trigger.txt |awk '{print "docker pull " $1} '| sh
 
 #指定 cpu 架构
-# cat trigger.txt |awk '{print "docker pull --platform linux/arm64 " $1} '
-# cat trigger.txt |awk '{print "docker pull --platform linux/arm64 " $1} '| sh
+cat trigger.txt |awk '{print "docker pull --platform linux/amd64 " $1} '
+cat trigger.txt |awk '{print "docker pull --platform linux/amd64 " $1} '| sh
 
 # inspect Architectur
 # cat trigger.txt |awk '{print "docker image inspect  " $1 "| grep Architectur" } '
