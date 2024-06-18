@@ -1,2 +1,2 @@
-grafana/grafana:9.5.19-ubuntu registry.cn-beijing.aliyuncs.com/hgimages/grafana/grafana:9.5.19-ubuntu
+nginx:1.26.1 registry.cn-beijing.aliyuncs.com/hgimages/nginx:1.26.1
 
